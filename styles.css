@@ -1613,3 +1613,57 @@ footer {
         padding-top: 0;
     }
 }
+
+/* Update header styles for mobile */
+@media (max-width: 768px) {
+    header {
+        position: relative; /* Change from fixed to relative */
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    nav a {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    /* Remove padding-top from main content areas */
+    .explore-page {
+        padding-top: 0;
+    }
+
+    .bookings-page {
+        padding-top: 0;
+    }
+
+    /* Adjust hero sections */
+    .hero {
+        height: 90vh; /* Slightly reduce height for mobile */
+    }
+
+    .hero-content {
+        margin: 0 0 4rem 2rem; /* Reduce margins */
+    }
+
+    /* Adjust other section spacings */
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    .explore-hero, .bookings-hero {
+        margin-top: 0;
+    }
+}
